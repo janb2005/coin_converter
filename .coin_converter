@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter amount of coins");
+        String coins = scanner.nextLine();
+        
+        System.out.println(coins);
+
+        double result = 0;
+        double usd = 0.0045;
+        
+        result = Double.parseDouble(coins) * usd;
+
+        System.out.println(result);
+    }
+}
